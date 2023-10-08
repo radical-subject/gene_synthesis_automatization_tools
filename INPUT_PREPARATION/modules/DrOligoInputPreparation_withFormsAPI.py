@@ -121,15 +121,15 @@ def download_all_files(creds):
 ## main ##
 ##########
 def main() -> None:
+    EXPERIMENT_NAME = input("enter EXPERIMENT_NAME:")
     creating_dirs(EXPERIMENT_NAME)
     # retrive_forms_data()
     creds = google_auth()
     download_all_files(creds)
-
-
-if __name__ == "__main__":
-    EXPERIMENT_NAME = input("enter EXPERIMENT_NAME:")
-    main()
     print("done")
     print("press ENTER to exit")
     input()
+
+
+if __name__ == "__main__":
+    main()

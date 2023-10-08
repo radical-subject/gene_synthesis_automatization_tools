@@ -15,6 +15,15 @@ import os
 import sys
 from warnings import catch_warnings
 
+# MayaChemTools imports...
+try:
+    import MiscUtil
+    from docopt import docopt
+except ImportError as ErrMsg:
+    sys.stderr.write("\nFailed to import MayaChemTools module/package: %s\n" % ErrMsg)
+    sys.stderr.write("Check/update your MayaChemTools environment and try again.\n\n")
+    sys.exit(1)
+
 ########################
 ## GOOGLE API IMPORTS ##
 ########################
@@ -107,6 +116,64 @@ def download_request_file(fileID, filename):
 
 for file in file_list:
     download_request_file(file[0]["fileId"], file[0]["fileName"])
+
+
+def RetrieveOptions():
+    """Retrieve command line arguments and options."""
+
+    # Get options...
+    global Options
+    Options = docopt(_docoptUsage_)
+
+    # Set current working directory to the specified directory...
+    WorkingDir = Options["--workingdir"]
+    if WorkingDir:
+        os.chdir(WorkingDir)
+
+    # Handle examples option...
+    if "--examples" in Options and Options["--examples"]:
+        MiscUtil.PrintInfo(MiscUtil.GetExamplesTextFromDocOptText(_docoptUsage_))
+        sys.exit(0)
+
+
+# Setup a usage string for docopt...
+_docoptUsage_ = """
+DrOligoInputPreparation_withFormsAPI.py - DrOligo Input preparation
+
+Usage:
+    DrOligoInputPreparation_withFormsAPI.py [-n <exp name>] 
+    DrOligoInputPreparation_withFormsAPI.py -h | --help | -e | --examples
+
+Description:
+    Generate input files for DrOligo768XLC from requests submitted in google forms:
+
+    The supported input file formats are:  .csv, .tsv, .txt, xslx
+
+    The supported output file format are: SD (.csv, .xlsx)
+
+Options:
+    -n, --name 
+    -e, --examples
+        Print examples.
+    -h, --help
+        Print this help message.
+
+
+Examples:
+    To download files with oligos for synthesis from google forms and prepare inputs for Dr.Oligo run:
+        % DrOligoInputPreparation_withFormsAPI.py -n KJE0006
+        
+        or (optional):
+        
+        % DrOligoInputPreparation_withFormsAPI.py -n KJE0006 --format csv
+
+Author:
+    OLEG FEDOROV (o.fedorov@sysbiomed.ru)
+
+Copyright:
+    Copyright (C) 2023 OLEG FEDOROV. All rights reserved.
+
+"""
 
 
 ##########

@@ -1,0 +1,14 @@
+2022-01-03 14:50:03 | DEBUG | gisaid_requester:re_request:452 - Sub-Table download is done
+2022-01-03 14:52:23 | DEBUG | gisaid_requester:setup_bot:415 - Browser was set
+2022-01-03 14:52:25 | DEBUG | gisaid_requester:setup_bot:417 - Login was done
+2022-01-03 14:52:25 | DEBUG | gisaid_requester:setup_bot:419 - Search page was done
+2022-01-03 14:54:19 | DEBUG | gisaid_requester:set_table_params:517 - Parameters for Sub-table were done
+2022-01-03 14:54:24 | DEBUG | gisaid_requester:set_table_params:521 - Sub-Table is ready with 0 elements
+2022-01-03 14:54:24 | DEBUG | gisaid_requester:re_request:452 - Sub-Table download is done
+2022-01-03 14:57:32 | DEBUG | gisaid_requester:set_table_params:517 - Parameters for Sub-table were done
+2022-01-03 14:57:37 | DEBUG | gisaid_requester:set_table_params:521 - Sub-Table is ready with 0 elements
+2022-01-03 14:57:37 | DEBUG | gisaid_requester:re_request:452 - Sub-Table download is done
+2022-01-03 15:00:38 | DEBUG | gisaid_requester:set_table_params:517 - Parameters for Sub-table were done
+2022-01-03 15:00:43 | DEBUG | gisaid_requester:set_table_params:521 - Sub-Table is ready with 0 elements
+2022-01-03 15:00:43 | DEBUG | gisaid_requester:re_request:452 - Sub-Table download is done
+2022-01-03 15:02:52 | DEBUG | gisaid_requester:setup_bot:415 - Browser was set

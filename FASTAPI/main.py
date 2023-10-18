@@ -1,6 +1,6 @@
 from typing import Union
 
-from modules import input_cleaner
+from modules.input_cleaner import combined_pipeline
 from modules.send_email import send_email
 from pydantic import BaseModel
 
@@ -15,13 +15,19 @@ class Item(BaseModel):
 
 @app.post("/send_email_with_data/")
 async def create_item(item: Item):
+    """
+    передаем EXPERIMENT_NAME переменную текстом. пример: `KJE0008`
+    """
     send_email(item.name)
     return item
 
 
 @app.post("/prepare_inputs/")
 async def create_item(item: Item):
-    input_cleaner.combined_pipeline(item.name)
+    """
+    передаем EXPERIMENT_NAME переменную текстом. пример: `KJE0008`
+    """
+    combined_pipeline(item.name)
     return item
 
 

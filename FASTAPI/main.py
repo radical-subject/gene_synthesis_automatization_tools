@@ -1,13 +1,29 @@
 from typing import Union
 
-from fastapi import FastAPI
+from modules import input_cleaner
 from modules.send_email import send_email
+from pydantic import BaseModel
+
+from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/sendemail")
-def read_root():
-    return {send_email()}
+
+class Item(BaseModel):
+    name: str | None = None
+
+
+@app.post("/send_email_with_data/")
+async def create_item(item: Item):
+    send_email(item.name)
+    return item
+
+
+@app.post("/prepare_inputs/")
+async def create_item(item: Item):
+    input_cleaner.combined_pipeline(item.name)
+    return item
+
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):

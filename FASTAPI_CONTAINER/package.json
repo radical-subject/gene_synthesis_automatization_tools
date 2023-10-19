@@ -1,0 +1,15 @@
+{
+  "name": "vendorbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon -L"
+  },
+  "author": "",
+  "license": "ISC"
+}

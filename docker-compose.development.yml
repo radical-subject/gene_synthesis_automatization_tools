@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  vendorbot_service:
+    volumes:
+      - ./vendorbot_folder:/vendorbot_container # симлинкнули папку с файлами чтобы они обновлялись при любых изменениях в деве
+      - /vendorbot_container/node_modules # это чтобы не ругался на отсутствие папки node modules
+    environment:
+      - BOT_TOKEN=${DEVELOPMENT_BOT_TOKEN}
+      - LOG_LEVEL=DEBUG
+    command: npm run dev
+    
+  mongodb_api:
+    # shorten logs
+    command: mongod --quiet --logpath /dev/null # логи монго выключены на полшишечки

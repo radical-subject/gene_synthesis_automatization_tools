@@ -23,6 +23,15 @@ services:
       - ../folders/RUNFILES:/RUNFILES:ro # basic initialization of docker user and db with .js config file  
     command: conda run --no-capture-output -n fastapi_env uvicorn main:app --reload --host 0.0.0.0 --port 80 #chmod -R 777 /opt/conda/envs/ && --host 10.12.1.31 --port 8000 # conda run -n fastapi_env uvicorn main:app --reload --port 8000
 
+  n8n:
+    image: naskio/n8n-python
+    container_name: n8n_container
+    restart: always
+    ports:
+      - 10.12.1.31:5678:5678 # binds to docker internal service to localhost:27017
+    volumes:
+      - ./n8n_FOLDER:/home/node/.n8n
+
 #   mongodb_api:
 #     image: mongo:latest
 #     container_name: mongodb
@@ -38,6 +47,7 @@ services:
 #       - mongo_dumps:/mongodumps
 #     # shorten logs
 #     command: mongod --quiet --logpath /dev/null # логи монго выключены насовсем
+
 
 #   mongo_express:
 #     container_name: mongo-express-panel

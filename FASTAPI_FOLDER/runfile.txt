@@ -1,0 +1,100 @@
+10/20/2023 10:33:44.059, 144  Macro  "2.0 XLc Cap 60sRxn_drainVAR.mac" [14], Chemistry Type = "Cap", on cycles:
+10/20/2023 10:33:44.145, 145  -   Cap Plate A:Cap-B 24 ul Cap-A 24 ul, Plate B: Cap-B 24 ul Cap-A 24 ul, Cap complete, Base 84
+10/20/2023 10:33:47.606, 146  -   Move to Position: "Plates under windows," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:33:49.176, 147  -   Toggle "ON"  &[AA Purge Wash, Open Vent Plate B]
+10/20/2023 10:33:49.432, 148  -   Toggle "ON"  &[AA Purge Gas, Up Flow Plate A]
+10/20/2023 10:33:49.687, 149  -   Toggle "OFF"  &[AA Purge Wash, Open Vent Plate B]
+10/20/2023 10:33:49.957, 150  -   Toggle "ON"  &[Clamp]
+10/20/2023 10:33:50.207, 151  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:33:51.279, 152  -   Drain 60.0 sec "Low Press 1 Fix", Drain complete, Base 84
+10/20/2023 10:34:51.591, 153  -   Drain 15.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:35:21.904, 154  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:35:23.018, 155  -   Toggle "OFF"  &[Clamp]
+10/20/2023 10:35:23.276, 156  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:35:24.397, 157  -   Toggle "OFF"  &[AA Purge Gas, Up Flow Plate A]
+10/20/2023 10:35:24.657, 158  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:35:25.231, 159  Macro  "2.0 XLc Wash 80uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:35:25.288, 160  -   Wash 80 ul, 80 ul, Wash complete, Base 84
+10/20/2023 10:35:28.125, 161  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:35:29.676, 162  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:35:43.991, 163  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:35:44.583, 164  Macro  "2.0 XLc Wash 80uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:35:44.645, 165  -   Wash 80 ul, 80 ul, Wash complete, Base 84
+10/20/2023 10:35:47.502, 166  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:35:49.078, 167  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:36:03.368, 168  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:36:03.906, 169  Macro  "10 s High Drain &V Fixed.mac" [7], Chemistry Type = "None", on cycles:
+10/20/2023 10:36:03.947, 170  -   Move to Position: "Drain XLc," -43, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:36:04.721, 171  -   Toggle "ON"  &[Clamp]
+10/20/2023 10:36:04.987, 172  -   Toggle "ON"  &[Reagent Purge Wash, AA Purge Enable]
+10/20/2023 10:36:05.238, 173  -   Hold Fixed 10.0 sec, 10.0 sec, Hold complete, Base 84
+10/20/2023 10:36:15.325, 174  -   Toggle "OFF"  &[Reagent Purge Wash, AA Purge Enable]
+10/20/2023 10:36:15.578, 175  -   Toggle "OFF"  &[Clamp]
+10/20/2023 10:36:15.833, 176  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:36:16.877, 177  Loop until Base 999       Synthesis Loop 84 complete
+10/20/2023 10:36:16.958, 178  Move to Position: "Plates under windows," -35, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:36:17.864, 179  Macro  "2.0 XLc Wash 80uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:36:17.933, 180  -   Wash 80 ul, 80 ul, Wash complete, Base 84
+10/20/2023 10:36:52.790, 181  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:36:55.006, 182  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:37:02.319, 183  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:37:02.869, 184  Macro  "2.0 XLc Couplex2_90sRxn_drainVAR.mac" [13], Chemistry Type = "Couple", on cycles:
+10/20/2023 10:37:02.909, 198  Macro  "2.0 XLc Wash 140uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:37:02.972, 199  -   Wash 140 ul, 140 ul, Wash complete, Base 84
+10/20/2023 10:37:45.697, 200  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:37:47.921, 201  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:37:55.244, 202  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:37:55.821, 203  Macro  "2.0 XLc Wash 140uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:37:55.885, 204  -   Wash 140 ul, 140 ul, Wash complete, Base 84
+10/20/2023 10:38:39.059, 205  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:38:41.246, 206  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:38:48.584, 207  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:38:49.179, 208  Macro  "2.0 XLc Dblk_60ul 15Rxn_B1_100sHold_drainVAR.mac" [11], Chemistry Type = "Deblock", on cycles:
+10/20/2023 10:38:49.256, Trityl Insert Prompt for Base 84
+10/20/2023 10:43:42.716, Trityl Insert Accepted
+10/20/2023 10:43:43.822, 209  -   DeBlock 60 ul, 60 ul, Deblock complete, Base 84
+10/20/2023 10:44:17.434, 210  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:44:19.684, 211  -   Hold Fixed 100.0 sec, 100.0 sec, Hold complete, Base 84
+10/20/2023 10:45:59.772, 212  -   Toggle "ON"  &[Open Vent Plate A, Open Vent Plate B]
+10/20/2023 10:46:00.031, 213  -   Toggle "ON"  &[Clamp]
+10/20/2023 10:46:00.291, 214  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:46:01.371, 215  -   Toggle "OFF"  &[Open Vent Plate A, Open Vent Plate B]
+10/20/2023 10:46:01.628, 216  -   Drain 10.0 sec "Low Press 2 Fix", Drain complete, Base 84
+10/20/2023 10:46:11.900, 217  -   Drain 15.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:46:27.185, 218  -   Toggle "OFF"  &[Clamp]
+10/20/2023 10:46:27.445, 219  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:46:28.010, 220  Macro  "2.0 XLc Dblk_60ul 15Rxn_B1_100sHold_drainVAR.mac" [11], Chemistry Type = "Deblock", on cycles:
+10/20/2023 10:46:28.103, 221  -   DeBlock 60 ul, 60 ul, Deblock complete, Base 84
+10/20/2023 10:47:01.758, 222  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:47:04.037, 223  -   Hold Fixed 100.0 sec, 100.0 sec, Hold complete, Base 84
+10/20/2023 10:48:44.134, 224  -   Toggle "ON"  &[Open Vent Plate A, Open Vent Plate B]
+10/20/2023 10:48:44.385, 225  -   Toggle "ON"  &[Clamp]
+10/20/2023 10:48:44.635, 226  -   Hold Fixed 1.0 sec, 1.0 sec, Hold complete, Base 84
+10/20/2023 10:48:45.715, 227  -   Toggle "OFF"  &[Open Vent Plate A, Open Vent Plate B]
+10/20/2023 10:48:45.977, 228  -   Drain 10.0 sec "Low Press 2 Fix", Drain complete, Base 84
+10/20/2023 10:48:56.310, 229  -   Drain 15.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:49:11.627, 230  -   Toggle "OFF"  &[Clamp]
+10/20/2023 10:49:11.878, 231  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:49:12.486, 232  Macro  "2.0 XLc Wash 140uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:49:12.558, Trityl Remove Prompt for Base 84
+10/20/2023 10:56:41.693, Trityl Remove Accepted
+10/20/2023 10:56:42.785, 233  -   Wash 140 ul, 140 ul, Wash complete, Base 84
+10/20/2023 10:57:25.384, 234  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:57:27.628, 235  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:57:34.978, 236  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:57:35.541, 237  Macro  "2.0 XLc Wash 140uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:57:35.611, 238  -   Wash 140 ul, 140 ul, Wash complete, Base 84
+10/20/2023 10:58:18.208, 239  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:58:20.404, 240  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:58:27.683, 241  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:58:28.230, 242  Macro  "2.0 XLc Wash 140uL_7s.mac" [4], Chemistry Type = "Wash", on cycles:
+10/20/2023 10:58:28.297, 243  -   Wash 140 ul, 140 ul, Wash complete, Base 84
+10/20/2023 10:59:11.008, 244  -   Move to Position: "Drain XLc," -44, Nozz. Rear Move started, Move complete, Base 84
+10/20/2023 10:59:13.221, 245  -   Drain 7.0 sec "Hi Drain A B Var", Drain complete, Base 84
+10/20/2023 10:59:20.502, 246  -   Hold Fixed 0.5 sec, 0.5 sec, Hold complete, Base 84
+10/20/2023 10:59:21.086, 247  Macro  "Mac Set Bottle Flow System OFF.mac" [1], Chemistry Type = "None", on cycles:
+10/20/2023 10:59:21.132, 248  -   Toggle "OFF"  &[Low Press Plate A, Up Flow Plate A, Open Vent Plate B]
+10/20/2023 10:59:22.235, Average Cycle Time: 00:24:08
+10/20/2023 10:59:22.235, Synthesis complete
+10/20/2023 13:34:25.584, User selection to open Manual Mode
+10/23/2023 12:46:19.785, Synthesis will pause at the end of this Oligo cycle, due to:  B1-5 Reagent Bottle Gas Pressure is too low.

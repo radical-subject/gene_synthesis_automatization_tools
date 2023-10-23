@@ -1,6 +1,6 @@
 
 FROM continuumio/miniconda3
-WORKDIR /vendorbot_container
+WORKDIR /FASTAPI_FOLDER
 
 COPY env.yml .
 
@@ -9,15 +9,15 @@ RUN conda update -n base -c defaults conda
 # install main bot dependencies
 RUN conda env create -f env.yml
 
-# manually install node 15 for dev mode nodemon to work
-RUN apt-get update -y \
-  && apt-get install -y curl \
-  && curl -sL https://deb.nodesource.com/setup_16.x | bash - \
-  && apt-get install -y nodejs \
-  && curl -L https://www.npmjs.com/install.sh | sh
+# # manually install node 15 for dev mode nodemon to work
+# RUN apt-get update -y \
+#   && apt-get install -y curl \
+#   && curl -sL https://deb.nodesource.com/setup_16.x | bash - \
+#   && apt-get install -y nodejs \
+#   && curl -L https://www.npmjs.com/install.sh | sh
 
-COPY package*.json ./
-RUN npm install
+# COPY package*.json ./
+# RUN npm install
 
 # copy all other files for bot
 COPY . .

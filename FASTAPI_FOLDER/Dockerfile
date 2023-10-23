@@ -38,3 +38,11 @@ RUN /bin/bash -c "source activate fastapi_env"
 #RUN chown -R $USER:$USER /opt/conda/envs
 
 SHELL ["conda", "run", "-n", "fastapi_env", "/bin/bash", "-c"] 
+
+
+
+
+
+
+
+

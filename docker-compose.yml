@@ -19,7 +19,7 @@ services:
     #   - PICTURES_PATH=/vendorbot_container/srs/pic
     ports:
       - 8891:8000 # binds to docker internal service to localhost:27017
-    command: conda run -n fastapi_env --no-capture-output uvicorn main:app --reload #chmod -R 777 /opt/conda/envs/ &&
+    command: conda run -n fastapi_env --no-capture-output uvicorn main:app --reload --host 10.12.1.31 --port 8000 #chmod -R 777 /opt/conda/envs/ &&
 
 #   mongodb_api:
 #     image: mongo:latest

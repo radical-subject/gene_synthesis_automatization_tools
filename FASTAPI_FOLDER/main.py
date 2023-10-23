@@ -48,13 +48,3 @@ async def create_item_id(item: Item_for_tg_notif):
     """
     check_and_notify(item.name, item.chat_id)
     return item
-
-
-# from fastapi import FastAPI
-
-# app = FastAPI()
-
-
-# @app.get("/")
-# async def root():
-#     return {"message": "Hello World"}

@@ -17,6 +17,8 @@ services:
     #   - MONGO_BOT_PASSWORD=botpsswd
     #   - BOT_TOKEN=${BOT_TOKEN}
     #   - PICTURES_PATH=/vendorbot_container/srs/pic
+    ports:
+      - 8000:8891 # binds to docker internal service to localhost:27017
     command: conda run -n fastapi_env --no-capture-output uvicorn main:app --reload #chmod -R 777 /opt/conda/envs/ &&
 
 #   mongodb_api:

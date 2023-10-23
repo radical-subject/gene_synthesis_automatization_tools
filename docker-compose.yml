@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  vendorbot_service:
+  fastapi_service:
     build: ./FASTAPI_FOLDER # относительный путь до папки  файлами. откуда compose будет брать их чтобы сбилдить
     container_name: FASTAPI_CONTAINER
     tty: true # this fucker is a must for container to run - why?
@@ -19,7 +19,7 @@ services:
     #   - PICTURES_PATH=/vendorbot_container/srs/pic
     ports:
       - 8891:8000 # binds to docker internal service to localhost:27017
-    command: conda run -n fastapi_env uvicorn main:app --reload #chmod -R 777 /opt/conda/envs/ && --host 10.12.1.31 --port 8000
+    command: conda run -n fastapi_env uvicorn main:app --reload --host 10.12.1.31 #chmod -R 777 /opt/conda/envs/ && --host 10.12.1.31 --port 8000
 
 #   mongodb_api:
 #     image: mongo:latest

@@ -29,6 +29,7 @@
 
 import glob
 import os
+import shutil
 import sys
 import unicodedata
 
@@ -444,6 +445,13 @@ def combined_pipeline(EXPERIMENT_NAME):
     dfs_list = process_files(EXPERIMENT_NAME)
     export_to_input_files(dfs_list, EXPERIMENT_NAME)
     create_file_with_emails(EXPERIMENT_NAME)
+
+    dirpath = os.path.join(
+        "..", "INPUT_PREPARATION", "result_input", f"{EXPERIMENT_NAME}"
+    )
+
+    target_dirpath = os.path.join("/", "SEQUENCES")
+    shutil.copytree(dirpath, target_dirpath, dirs_exist_ok=True)
 
 
 # In[ ]:

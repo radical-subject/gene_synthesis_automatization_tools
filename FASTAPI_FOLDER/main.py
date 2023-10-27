@@ -49,15 +49,13 @@ async def create_item_id(item: Item_for_tg_notif):
     """
     передаем chat_id переменную текстом. пример: `234234235`
     """
-
-    logger = logging.getLogger("uvicorn")
-    logger.INFO(
-        "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
-    )
     check_and_notify(item.name, item.chat_id)
     return item
 
 
 if __name__ == "__main__":
     logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
+    logging.INFO(
+        "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
+    )
     uvicorn.run(app, log_config=None, host="0.0.0.0", port=80)

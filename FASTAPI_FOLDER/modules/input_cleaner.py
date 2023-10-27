@@ -28,6 +28,7 @@
 #######################
 
 import glob
+import logging
 import os
 import shutil
 import sys
@@ -41,6 +42,10 @@ import pandas as pd
 # Список для хранения обработанных DataFrame из каждого файла
 
 sys.path.append("..")
+logger = logging.getLogger("uvicorn")
+logger.info(
+    "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
+)
 
 
 def xlsx_paths(EXPERIMENT_NAME):

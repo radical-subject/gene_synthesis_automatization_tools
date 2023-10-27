@@ -440,6 +440,8 @@ def create_file_with_emails(EXPERIMENT_NAME):
 
 
 def combined_pipeline(EXPERIMENT_NAME):
+    print(os.getcwd())
+
     main(EXPERIMENT_NAME)
     print(EXPERIMENT_NAME)
     dfs_list = process_files(EXPERIMENT_NAME)

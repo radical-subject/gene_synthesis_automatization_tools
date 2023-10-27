@@ -8,7 +8,8 @@ import requests
 
 def check_and_notify(name, chat_id):
     # Замените следующие значения на ваш Telegram bot token и chat_id
-    bot_token = "1959421074:AAGqmZMVeuoZD8L8Jkqy7cPdxfP9Wk-MXJA"
+    # bot_token = "1959421074:AAGqmZMVeuoZD8L8Jkqy7cPdxfP9Wk-MXJA"
+    bot_token = os.getenv("BOT_TOKEN")
     notification_sent = False
 
     filepath = os.path.join("/RUNFILES", f"{name}.txt")

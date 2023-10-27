@@ -8,7 +8,7 @@ from modules.tg_notif import check_and_notify
 from pydantic import BaseModel
 
 app = FastAPI()
-logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
+# logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
 
 
 class Item(BaseModel):
@@ -48,5 +48,10 @@ async def create_item_id(item: Item_for_tg_notif):
     """
     передаем chat_id переменную текстом. пример: `234234235`
     """
+
+    logger = logging.getLogger("uvicorn")
+    logger.info(
+        "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
+    )
     check_and_notify(item.name, item.chat_id)
     return item

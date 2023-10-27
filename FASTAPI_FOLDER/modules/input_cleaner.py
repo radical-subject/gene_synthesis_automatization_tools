@@ -42,10 +42,6 @@ import pandas as pd
 # Список для хранения обработанных DataFrame из каждого файла
 
 sys.path.append("..")
-logger = logging.getLogger("uvicorn")
-logger.info(
-    "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
-)
 
 
 def xlsx_paths(EXPERIMENT_NAME):
@@ -446,6 +442,10 @@ def create_file_with_emails(EXPERIMENT_NAME):
 
 def combined_pipeline(EXPERIMENT_NAME):
     print(os.getcwd())
+    logger = logging.getLogger("uvicorn")
+    logger.info(
+        "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
+    )
 
     main(EXPERIMENT_NAME)
     print(EXPERIMENT_NAME)

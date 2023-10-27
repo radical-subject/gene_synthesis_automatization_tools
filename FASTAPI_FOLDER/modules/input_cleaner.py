@@ -244,7 +244,7 @@ def creating_dirs(EXPERIMENT_NAME):
 
     dir = os.path.join("..", "INPUT_PREPARATION", "result_input", EXPERIMENT_NAME)
     if not os.path.exists(dir):
-        os.mkdir(dir)
+        os.makedirs(dir)
 
 
 def google_auth():

@@ -1,3 +1,4 @@
+import logging
 from typing import Union
 
 from fastapi import FastAPI
@@ -7,6 +8,7 @@ from modules.tg_notif import check_and_notify
 from pydantic import BaseModel
 
 app = FastAPI()
+logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
 
 
 class Item(BaseModel):

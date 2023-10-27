@@ -15,7 +15,7 @@ services:
     volumes:
       - ../folders/RUNFILES:/RUNFILES:ro # read only! 
       - ../folders/SEQUENCES:/SEQUENCES
-    command: conda run --no-capture-output -n fastapi_env uvicorn main:app --reload --host 0.0.0.0 --port 80 --log_config None #chmod -R 777 /opt/conda/envs/ && --host 10.12.1.31 --port 8000 # conda run -n fastapi_env uvicorn main:app --reload --port 8000
+    command: conda run --no-capture-output -n fastapi_env uvicorn main:app --reload --host 0.0.0.0 --port 80 --log_config=None #chmod -R 777 /opt/conda/envs/ && --host 10.12.1.31 --port 8000 # conda run -n fastapi_env uvicorn main:app --reload --port 8000
 
   n8n:
     image: naskio/n8n-python

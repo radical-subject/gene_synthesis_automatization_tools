@@ -50,7 +50,7 @@ async def create_item_id(item: Item_for_tg_notif):
     """
 
     logger = logging.getLogger("uvicorn")
-    logger.info(
+    logger.INFO(
         "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
     )
     check_and_notify(item.name, item.chat_id)

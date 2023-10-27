@@ -443,7 +443,7 @@ def create_file_with_emails(EXPERIMENT_NAME):
 def combined_pipeline(EXPERIMENT_NAME):
     print(os.getcwd())
     logger = logging.getLogger("uvicorn")
-    logger.info(
+    logger.INFO(
         "KASJCBKJVBEASKJCVGHQKAVHCKJASBCKJHEQBKJBC\nLKSADMVLKDMVLKSMDVLKMSLDMVLSKDMVLKSMDLVKMSDLMV"
     )
 

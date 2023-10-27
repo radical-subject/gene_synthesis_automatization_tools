@@ -60,5 +60,4 @@ async def create_item_id(item: Item_for_tg_notif):
 
 if __name__ == "__main__":
     logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
-    uvicorn.run(app, log_config=None)
-    uvicorn.run(app, host="0.0.0.0", port=80)
+    uvicorn.run(app, log_config=None, host="0.0.0.0", port=80)

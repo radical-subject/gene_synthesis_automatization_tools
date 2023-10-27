@@ -1,6 +1,7 @@
 import logging
 from typing import Union
 
+import uvicorn
 from fastapi import FastAPI
 from modules.input_cleaner import combined_pipeline
 from modules.send_email import send_email
@@ -55,3 +56,9 @@ async def create_item_id(item: Item_for_tg_notif):
     )
     check_and_notify(item.name, item.chat_id)
     return item
+
+
+if __name__ == "__main__":
+    logging.basicConfig(format="{levelname:7} {message}", style="{", level=logging.INFO)
+    uvicorn.run(app, log_config=None)
+    uvicorn.run(app, host="0.0.0.0", port=80)

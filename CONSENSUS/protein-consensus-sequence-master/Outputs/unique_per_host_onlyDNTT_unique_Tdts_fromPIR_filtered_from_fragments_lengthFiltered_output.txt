@@ -1,0 +1,14 @@
+Filtered sequence set: Inputs/unique_per_host_onlyDNTT_unique_Tdts_fromPIR_filtered_from_fragments.fasta
+
+Parameters used:
+Sequence length filtering threshold: 0.5
+
+Number of sequences in initial alignment: 488
+
+Median sequence length: 505 residues
+Sequence length lower boundary: 252 residues
+Sequence length upper boundary: 758 residues
+
+Number of sequences in final alignment: 466
+
+Wrote length filtered sequence set to: unique_per_host_onlyDNTT_unique_Tdts_fromPIR_filtered_from_fragments_lengthFiltered.txt

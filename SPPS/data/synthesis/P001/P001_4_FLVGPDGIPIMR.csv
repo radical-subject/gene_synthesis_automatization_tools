@@ -1,17 +1,16 @@
 Type,sequence
-fileName,P001_2_GAYPLSIEPIGVR
+fileName,P001_4_FLVGPDGIPIMR
 
 singleLetterAAs,ThreeLetterAAs
 R,Arg
+M,Met
+I,Ile
+P,Pro
+I,Ile
+G,Gly
+D,Asp
+P,Pro
+G,Gly
 V,Val
-G,Gly
-I,Ile
-P,Pro
-E,Glu
-I,Ile
-S,Ser
 L,Leu
-P,Pro
-Y,Tyr
-A,Ala
-G,Gly
+F,Phe

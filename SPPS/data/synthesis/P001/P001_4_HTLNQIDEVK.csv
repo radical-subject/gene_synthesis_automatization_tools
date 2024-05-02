@@ -1,14 +1,14 @@
 Type,sequence
-fileName,P001_1_LSSPAVITDK
+fileName,P001_4_HTLNQIDEVK
 
 singleLetterAAs,ThreeLetterAAs
 K,Lys
-D,Asp
-T,Thr
-I,Ile
 V,Val
-A,Ala
-P,Pro
-S,Ser
-S,Ser
+E,Glu
+D,Asp
+I,Ile
+Q,Gln
+N,Asn
 L,Leu
+T,Thr
+H,His

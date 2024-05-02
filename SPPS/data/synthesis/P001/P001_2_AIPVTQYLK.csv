@@ -1,16 +1,13 @@
 Type,sequence
-fileName,P001_2_AETGDKVYVHLK
+fileName,P001_2_AIPVTQYLK
 
 singleLetterAAs,ThreeLetterAAs
 K,Lys
 L,Leu
-H,His
-V,Val
 Y,Tyr
-V,Val
-K,Lys
-D,Asp
-G,Gly
+Q,Gln
 T,Thr
-E,Glu
+V,Val
+P,Pro
+I,Ile
 A,Ala

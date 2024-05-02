@@ -1,13 +1,10 @@
 Type,sequence
-fileName,P001_1_AKPALEDLR
+fileName,P001_1_VLDAVR
 
 singleLetterAAs,ThreeLetterAAs
 R,Arg
-L,Leu
+V,Val
+A,Ala
 D,Asp
-E,Glu
 L,Leu
-A,Ala
-P,Pro
-K,Lys
-A,Ala
+V,Val

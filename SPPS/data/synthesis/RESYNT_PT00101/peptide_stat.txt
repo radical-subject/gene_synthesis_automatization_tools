@@ -1,0 +1,5 @@
+batch	sequence	reactions	resin_R	A	D	L	V	resin_K	E	F	G	I	S	T	P	Q
+1	AIETFSGK	7	0	1	0	0	0	1	1	1	1	1	1	1	0	0
+1	DFVQPPTK	7	0	0	1	0	1	1	0	1	0	0	0	1	2	1
+1	EPAPTTPK	7	0	1	0	0	0	1	1	0	0	0	0	2	3	0
+1	VLDAVR	5	1	1	1	1	2	0	0	0	0	0	0	0	0	0
